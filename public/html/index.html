@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>NodeMCU</title>
+	</head>
+    <link rel="stylesheet" href="/css/style.css">
+	<body style="background-color: #242526" onload="show()">
+		<div class="Mypage">
+			<div class="range">
+				<label>light Intensity  </label>
+				<!-- show() is a js function controlling Style for the slider -->
+				<input type="range" id="range" min="0" max="255" value="0" oninput="show()"/>
+				<label id="val">255</label>
+			</div>
+		</div>
+		<script src="/js/script.js" > </script>
+	</body>
+</html>
