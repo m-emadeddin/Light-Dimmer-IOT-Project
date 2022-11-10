@@ -74,5 +74,6 @@ slider.onchange = function() {
     }, 10000);
 }
 
-
-
+setTimeout(() => {
+      document.location.reload();
+    }, 10000);
