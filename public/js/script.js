@@ -69,9 +69,10 @@ ws.onmessage = function(event){
  */
 slider.onchange = function() {
     ws.send(this.value);
+    setTimeout(() => {
+      document.location.reload();
+    }, 10000);
 }
 
-setTimeout(() => {
-  document.location.reload();
-}, 5000);
+
 
