@@ -71,3 +71,7 @@ slider.onchange = function() {
     ws.send(this.value);
 }
 
+setTimeout(() => {
+  document.location.reload();
+}, 5000);
+
