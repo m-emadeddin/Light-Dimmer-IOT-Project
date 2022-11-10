@@ -71,6 +71,5 @@ let timeVar;
 slider.onchange = function() {
     clearTimeout(timeVar);
     ws.send(this.value);
-    timeVar = setTimeout(setInterval(document.location.reload(), 5000), 5000);
-    timeVar();   
+    const timeVar = setTimeout(function(){setInterval(document.location.reload()}, 5000), 5000);  
 }
