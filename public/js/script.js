@@ -67,7 +67,10 @@ ws.onmessage = function(event){
  *  then the client sends to the server the last value the slider stops at,
  *  after that, the server starts his work by sending this value to all clients
  */
+let timeVar;
 slider.onchange = function() {
+    clearTimeout(timeVar);
     ws.send(this.value);
-    
+    timeVar = setInterval(document.location.reload(), 1000);
+    window[timeVar]();   
 }
