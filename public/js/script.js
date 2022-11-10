@@ -56,6 +56,7 @@ ws.onopen = function(){
  */
 ws.onmessage = function(event){
     final = event.data;
+    console.log(final);
     slider.value = final;
     show();
 
