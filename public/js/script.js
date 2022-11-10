@@ -27,7 +27,7 @@ function show() {
 
 
 // intialize WEBSOCKET HOST & WEBSOCKET
-var HOST = location.origin.replace(/^http/, 'ws');
+var HOST = location.origin.replace(/^https/, 'ws');
 
 // ws is our client variable name on the websocket
 var ws = new WebSocket(HOST);
